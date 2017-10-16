@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Content</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<body>
+
+<!-- header -->
+<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" width="80"
+                 height="40" alt="hng-finance-logo">
+        </a>
+        <!--<a href="#" class="inline unilever-img"><img-->
+        <!--src="http://res.cloudinary.com/dikethelma/image/upload/v1508168402/Unilever_lblgla.png"-->
+        <!--alt="unilever-logo"></a>-->
+        <!--<a href="#" class="inline text-white">Unilever</a>-->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle white-text business-account" data-toggle="dropdown" role="button"
+                   aria-haspopup="true"
+                   aria-expanded="false">
+                    <img src="http://res.cloudinary.com/dikethelma/image/upload/v1508168402/Unilever_lblgla.png"
+                         alt="unilever-logo">
+                    Unilever
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#" class="account-officer">
+                    <img src="images/acc-officer.svg" alt="">
+                    <p class="description white-text">Your account officer</p>
+                    <div class="contact-holder">
+                        <p class="name white-text">Leyanu Moses</p>
+                        <p class="call white-text">Call - +2340848884443</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+
+</nav>
+
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9 col-sm-12 col-xs-12" id="start">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#unsent" aria-controls="unsent" role="tab"
+                                                          data-toggle="tab">Unsent</a></li>
+                <li role="presentation"><a href="#sent" aria-controls="sent" role="tab"
+                                           data-toggle="tab">Sent</a></li>
+                <li role="presentation"><a href="#overdue" aria-controls="overdue" role="tab"
+                                           data-toggle="tab">Overdue</a>
+                </li>
+                <li role="presentation"><a href="#paid" aria-controls="paid" role="tab" data-toggle="tab">Paid</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active white-bg" id="unsent">
+                    <div class="filter-area">
+                        <p class="primary-text unsent-notify">10 Unsent Invoices</p>
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="email" class="form-control first" id="startDate" placeholder="01-Jul-2017">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control second" id="endDate"
+                                       placeholder="01-Jul-2017">
+                            </div>
+                            <button type="submit" class="btn btn-default primary-dark white-text">Get Records</button>
+                        </form>
+                        <!-- Split button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Sort by date</button>
+                            <button type="button" class="btn btn-default dropdown-toggle primary white-text caret-area" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-default primary white-text">Create-new</button>
+                    </div>
+                    <hr>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="sent">...</div>
+                <div role="tabpanel" class="tab-pane fade" id="overdue">...</div>
+                <div role="tabpanel" class="tab-pane fade" id="due">...</div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
