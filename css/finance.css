@@ -1,0 +1,25 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.branding{
+   background-color: #084482; 
+   padding: 5px 15px 5px 15px;
+  
+}
+
+.navbar{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #00AEFF;
+}
+
+.navbar-text{
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+
