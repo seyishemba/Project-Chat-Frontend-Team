@@ -74,6 +74,10 @@
     font-weight: bold;
 }
 
+.profile-text:hover{
+    color: #fff;
+}
+
 .info {
     position: relative;
     display: flex;
@@ -113,5 +117,5 @@
 }
 
 .dropdown-name{
-    margin-top: 100px;
+    top: 40px;
 }
