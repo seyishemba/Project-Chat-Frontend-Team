@@ -6,6 +6,7 @@
 
 body {
     background-color: #F2F2F2;
+    font-family: Lato, sans-serif;
 }
 
 
@@ -246,26 +247,8 @@ body {
     margin: 0 10px;
 }
 
-body {
-    margin: 0 !important;
-    padding: 0 !important;
-    background: #e5e5e5;
-    font-family: Lato, sans-serif;
-}
 
-.navbar-brand {
-    background: var(--primary-dark);
-    height: 100%;
-    padding: 10px 25px;
-}
 
-.navbar {
-    margin: 0 !important;
-    padding: 0 !important;
-    background-color: #00aeff;
-    border: none;
-    border-radius: 0;
-}
 
 .business-account {
     font-size: 18px;
@@ -280,7 +263,7 @@ body {
     height: 31px;
     margin: 0 5px;
 }
-
+/* 
 .account-officer {
     position: relative !important;
     padding: 0 10px !important;
@@ -316,7 +299,7 @@ body {
 
 .account-officer .contact-holder p:first-child {
     font-weight: bold;
-}
+} */
 
 hr {
     margin-top: 15px;
@@ -403,40 +386,30 @@ hr {
     height: auto;
     padding-bottom: 30px;
     position: relative;
-    width: 100%;
     border-bottom: 1px solid #788996;
     border-top: 1px solid #DDDDDD;
 }
 
-.footer p {
-    margin: 0;
-}
-
-.footer img {
-    max-width: 100%;
-}
 
 .footer h3 {
-    border-bottom: 1px solid #788996;
-    padding: 0 0 10px 0;
+    /* padding: 0 0 10px 0; */
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
     font-size: 16px;
+    padding:  0 0 0 15px;
     color: #4F4F4F;
 }
 
 .footer ul {
     list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-    margin-top: 7px;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
     line-height: 22px;
     font-size: 14px;
+    padding: 0 15px;
     color: #828282;
 }
 
@@ -449,11 +422,9 @@ hr {
     color: #78828D
 }
 
-.bg-gray {
-    background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
-    box-shadow: 0 1px 0 #B4B3B3;
+.social {
+    text-align: center;
 }
-
 .social li a {
     color: #EDEFF1;
 }
@@ -504,4 +475,5 @@ hr {
 
 .certified li {
     margin-right: 19px;
+    width: 32px;
 }
