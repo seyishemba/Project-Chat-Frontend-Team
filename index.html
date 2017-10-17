@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account Officer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--===================================== HEADER ===================================-->
+
+    <!-- Primary Nav -->
+    <nav class="navbar">
+
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle mybtn" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand branding" href="#">
+                <img src="images/hng-finance-logo.png" width="80px" alt="finance logo">
+            </a>
+
+            <a href="#" class="inline unilever-img">
+
+                <img src="http://res.cloudinary.com/dikethelma/image/upload/v1508168402/Unilever_lblgla.png" alt="unilever-logo">
+
+            </a>
+
+            <a href="#" class="inline text-white">Unilever</a>
+
+        </div>
+
+        <div class="navbar-collapse collapse">
+
+            <div class="acc-officer">
+
+                <img src="images/download.jpg" class="img-circle profile-pic" width="15px" alt="profile picture">
+
+                <div class="info">
+
+                    <div class="text">
+
+                        <p class="">Lorem Isposium</p>
+
+                        <p class="number info-text">Call : +234 805 0854 408</p>
+
+                    </div>
+
+                    <img src="images/mail.svg" alt="mail" width="20">
+
+                </div>
+
+
+            </div>
+
+            <div class="nav navbar-nav navbar-right navbar-profile">
+
+
+                <div class="profile-group">
+
+                    <div class="dropdown">
+
+                        <img src="images/download.jpg" class="img-circle profile-img" width="25" alt="profile picture">
+
+                        <span class="navbar-text profile-text">
+
+                            <a href="#" class="dropdown-toggle profile-text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dike Thelma
+
+                                <span class="caret"></span>
+
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-name">
+                                <li>
+                                    <a href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#">Log Out</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#">Log Out</a>
+                                </li>
+
+                            </ul>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Secondary NAV -->
+
+    <div class="container-fluid secondary-nav">
+
+        <div class="row">
+
+            <div class="col-md-12 col-sm-6">
+
+                <ul class="list-inline">
+
+                    <li>
+                        <img src="images/Dashboard.png" alt="" srcset="" class="img-responsive">
+                        <p>Dashboard</p>
+                    </li>
+
+
+                    <li>
+                        <img src="images/Reservations.png" alt="" srcset="" class="img-responsive">
+                        <p>Reservations</p>
+                    </li>
+
+
+                    <li>
+                        <img src="images/Users.png" alt="" srcset="" class="img-responsive">
+                        <p>Users</p>
+                    </li>
+
+
+                    <li>
+                        <img src="images/Your Hotels.png" alt="" srcset="" class="img-responsive">
+                        <p>Your Hotels</p>
+                    </li>
+
+
+                    <li class="dropdown">
+
+                        <a class="dropdwon-toggle" data-toggle="dropdown">
+                            <img src="images/Finances.png" alt="" srcset="" class="img-responsive ">
+
+                            <p>Finance
+                                <span class="fa fa-angle-down" aria-hidden="true"></span>
+                            </p>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                            <li>
+                                <a href="#">Lorem</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================================ CONTENT AREA ================================   -->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 col-sm-12 col-xs-12" id="start">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#unsent" aria-controls="unsent" role="tab" data-toggle="tab">Unsent</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#sent" aria-controls="sent" role="tab" data-toggle="tab">Sent</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#overdue" aria-controls="overdue" role="tab" data-toggle="tab">Overdue</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#paid" aria-controls="paid" role="tab" data-toggle="tab">Paid</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active white-bg" id="unsent">
+                        <div class="filter-area">
+                            <p class="primary-text unsent-notify">10 Unsent Invoices</p>
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <input type="email" class="form-control first" id="startDate" placeholder="01-Jul-2017">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control second" id="endDate" placeholder="01-Jul-2017">
+                                </div>
+                                <button type="submit" class="btn btn-default primary-dark white-text">Get Records</button>
+                            </form>
+                            <!-- Split button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default">Sort by date</button>
+                                <button type="button" class="btn btn-default dropdown-toggle primary white-text caret-area" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-default primary white-text">Create-new</button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="sent">...</div>
+                    <div role="tabpanel" class="tab-pane fade" id="overdue">...</div>
+                    <div role="tabpanel" class="tab-pane fade" id="due">...</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- =================================   FOOTER ================================== -->
+
+    <!-- newsletter should go here -->
+
+    <footer>
+            <div class="footer" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-12 nospace">
+                            <h3> Company</h3>
+                            <ul>
+                                <li>
+                                    <a href="#"> Blog </a>
+                                </li>
+                                <li>
+                                    <a href="#"> About Us </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Press Page </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Job Opennings </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Trade & Advertising </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Terms & Condintions </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-12 nospace">
+                            <h3> Top Cities </h3>
+                            <ul>
+                                <li>
+                                    <a href="#"> Hotels in Benin </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hotels in Ekpoma </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hotels in Egor </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hotels in Eso </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hotels in Esan Central </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hotels in Ibillo </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hotels in Auchi </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hotels in Jattu </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hotels in Ibore </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-12 nospace">
+                            <h3> Top Hotels </h3>
+                            <ul>
+                                <li>
+                                    <a href="#"> Eko Hotel </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 4 Points by Sheraton </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Protea Hotels </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Intercontinental Hotels </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Westwood Hotels </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Shoregate Hotels </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Whitbaker Hotels </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Sheraton Hotels </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Ocean Suites </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-12 nospace">
+                            <h3> Top Attractions </h3>
+                            <ul>
+                                <li>
+                                    <a href="#"> Lagos Bar Beach </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Lagos Yacht Club </a>
+                                </li>
+                                <li>
+                                    <a href="#"> One 77 </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Fun Factory </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Hard Rock Cafe </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Neo Cafe </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Palms Shopping Mall </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Motor Boat Club </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-12 nospace">
+                            <h3> City Guides </h3>
+                            <ul>
+                                <li>
+                                    <a href="#"> Eko Cultures </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Luxury Pools in Lekki </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Explore Banana Islands </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Wonders of Badagry </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Eyo Traditions </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Traveller’s Guide </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Lagos Cuisines </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-12 nospace">
+                            <h3> Flights </h3>
+                            <ul>
+                                <li>
+                                    <a href="#"> Abuja to Lagos </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Fantastic Flight Deals </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Cheap Flights to Lagos </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Chartered Flights </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Calabar to Lagos </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Flights to Lagos </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Best Prices </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Uyo to Lagos </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            
+                            <p class="copyright"> Copyright © 2017 Hotels.ng All Rights Reserved. </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 nospace">
+    
+                            <ul class="nav nav-pills social">
+                                    <li>
+                                        <i class="fa fa-facebook"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-twitter"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-youtube"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-instagram"></i>
+                                    </li>
+                            </ul>
+    
+                        </div>
+    
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    
+                            <div class="certified">
+                                
+                                    <p>Certified by </p>
+                                <ul class="nav nav-pills payments">
+                                    <li>
+                                        <img src="images/nanta.png" alt="" srcset="">
+                                    </li>
+                                    <li>
+                                        <img src="images/ntdc.png" alt="" srcset="">
+                                    </li>
+                                    <li>
+                                        <img src="images/efcc.png" alt="" srcset="">
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                </div>
+                </div>
+            </div>
+        </footer>
+    
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
