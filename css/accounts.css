@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #00AEFF;
+}
+
+.branding{
+    background-color: #084482; 
+    padding: 5px 20px 5px 20px;    
+    display: inline;
+    margin-left: 0 !important;
+}
+
+.unilever-img {
+    margin-left: 25px;    
+}
+
+.inline {
+    display: inline;    
+    line-height: 45px;
+    white-space: nowrap;
+}
+
