@@ -15,12 +15,22 @@
 }
 
 .unilever-img {
-    margin-left: 25px;    
+    margin-left: 20px;    
 }
 
 .inline {
     display: inline;    
     line-height: 45px;
     white-space: nowrap;
+}
+
+.text-white{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.text-white:hover{
+    text-decoration: none;
 }
 
