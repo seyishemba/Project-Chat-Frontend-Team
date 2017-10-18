@@ -215,8 +215,8 @@
                                 </ul>
                             </nav>
                         </div>
-                        
-                        
+
+
                         <div class="col-md-10 ao-chat-body">
                             <div class="active-chat">
                                 <div class="company-name">
@@ -225,9 +225,9 @@
                             </div>
 
 
-                            <div class="panel-group" id="accordion">
+                            <div class="panel-group" id="accordion1">
                                 <div class="panel">
-                                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
                                         <div class="panel-title">
                                             <div class="name">John Doe</div>
                                             <div class="notification">
@@ -238,32 +238,91 @@
                                         </div>
                                     </div>
                                     <div id="collapse1" class="panel-collapse collapse out">
-                                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+
+                                        <div class="chat-space">
+
+                                            <div class="chat-box">
+                                                <!--Area where all the messages will be. Has a max-height. Can be altered-->
+                                                <div class="messages-area">
+                                                    <!--sent message from the user-->
+                                                    <div class="sent-message text-left">
+                                                        <p class="message sent">
+                                                            Hello!
+                                                        </p>
+                                                    </div>
+                                                    <!--Message received-->
+                                                    <div class="received-message text-left">
+                                                        <p class="message received">
+                                                            Hi! Ready to plan your trip.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!--Form to add new messages-->
+                                                <form action="" class="message-form">
+                                                    <div class="message-input-area">
+                                                        <label for="user-message"></label>
+                                                        <!--Input area for message-->
+                                                        <input type="text" class="message-input" name="user-message" id="user-message" placeholder="Write a message">
+                                                        <!--Submit button-->
+                                                        <button class="btn" type="submit">
+                                                            <i class="fa fa-send message-submit"></i>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="panel-group" id="accordion">
-                                    <div class="panel">
-                                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                            <div class="panel-title">
-                                                <div class="name">John Doe</div>
-                                                <div class="notification">
-                                                    <div class="time">12:30PM</div>
-                                                    <div class="banner">3</div>
-                                                </div>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <div class="panel-group" id="accordion2">
+                                <div class="panel">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
+                                        <div class="panel-title">
+                                            <div class="name">Jane Doe</div>
+                                            <div class="notification">
+                                                <div class="time">1:57PM</div>
+                                                <!-- <div class="banner">3</div> -->
                                             </div>
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </div>
-                                        <div id="collapse2" class="panel-collapse collapse out">
-                                            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse out">
+                                        <div class="chat-space">
+
+                                            <div class="chat-box">
+                                                <!--Area where all the messages will be. Has a max-height. Can be altered-->
+                                                <div class="messages-area">
+                                                    <!--sent message from the user-->
+                                                    <div class="sent-message text-left">
+                                                        <p class="message sent">
+                                                            Hello!
+                                                        </p>
+                                                    </div>
+                                                    <!--Message received-->
+                                                    <div class="received-message text-left">
+                                                        <p class="message received">
+                                                            Hi! Ready to plan your trip.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!--Form to add new messages-->
+                                                <form action="" class="message-form">
+                                                    <div class="message-input-area">
+                                                        <label for="user-message"></label>
+                                                        <!--Input area for message-->
+                                                        <input type="text" class="message-input" name="user-message" id="user-message" placeholder="Write a message" disabled>
+                                                        <!--Submit button-->
+                                                        <button class="btn" type="submit">
+                                                            <i class="fa fa-send message-submit"></i>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
 
                         </div>
@@ -649,6 +708,77 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+
+    <!-- Chat Demo js -->
+    <script>
+        //Script to simulate back and forth messaging between user and account officer;
+        const msgForm = document.querySelector('.message-form');
+        const msgsArea = document.querySelector('.messages-area');
+        const typingHtml =
+
+            `<div class="received-message typing">
+                            <p class="message received show-typing">...</p>
+                        </div>`; //Show when a reply is being typed
+
+        msgForm.addEventListener('submit', addMessage);
+
+        function addMessage(e) {
+            e.preventDefault();
+            const msgInput = document.querySelector('.message-input');
+            if (msgInput.value !== '') {
+                let message = msgInput.value;
+                let msgHtml =
+                    `
+                <div class="sent-message text-left">
+                    <p class="message sent">
+                             ${message}
+                    </p>
+               </div>
+            `;
+                msgsArea.innerHTML += msgHtml;
+                msgInput.value = '';
+                simulateReply()
+            } else {
+                return
+            }
+        }
+
+        function simulateReply() {
+            showTyping();
+            const replies = [
+                'Hey thank you for that message',
+                "Just hold on we'll be with you",
+                "What it do my nigs"
+            ];
+            setTimeout(() => {
+                let num = Math.round(Math.random() * replies.length);
+                console.log(num)
+                let randomMessage = replies[num];
+                let replyHtml =
+                    `
+                <div class="received-message text-left">
+                    <p class="message received">
+                             ${randomMessage}
+                    </p>
+               </div>
+            `;
+                msgsArea.innerHTML += replyHtml;
+                let msgAreaHeight = msgsArea.scrollHeight;
+                msgsArea.scrollTop = msgAreaHeight;
+            }, 3000)
+        }
+
+        function showTyping() {
+            msgsArea.innerHTML += typingHtml;
+            let msgAreaHeight = msgsArea.scrollHeight;
+            msgsArea.scrollTop = msgAreaHeight;
+            setTimeout(() => {
+                let typing = document.querySelector('.typing');
+                typing.remove()
+            }, 3000)
+        };
+    </script>
 </body>
 
 </html>
