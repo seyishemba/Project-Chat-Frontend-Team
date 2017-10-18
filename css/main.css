@@ -505,3 +505,136 @@ hr {
 .overlay:hover {
     background: rgba(0, 0, 0, 0.8);
 }
+
+/* CHAT SideBar */
+
+.chat-sb {
+    padding: 0 !important;
+}
+
+/* Account officer chat */
+
+.ao-chat {
+    width: 300px;
+    height: 1000px; /* test */
+    overflow-y: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ao-chat nav {
+    padding: 10px 0 0 5px;
+    width: 50px;
+    background-color: var(--primary-color);
+    height: 1000px;
+}
+
+.ao-chat .active {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:#F2F2F2;
+}
+
+.ao-chat .row {
+    margin: 0 0 0 -15px !important;
+}
+
+.ao-chat ul {
+    margin-top: 50px;
+}
+
+.ao-chat li {
+    margin-bottom: 10px;
+}
+
+.ao-chat li > a {
+    padding: 5px 0 5px 7px;
+}
+
+.ao-chat a:hover {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:#F2F2F2;
+}
+
+.ao-chat a:focus {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:#F2F2F2;
+}
+
+.active-chat {
+    /* width: 233px; */
+    height: 39px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ao-chat .ao-chat-body {
+    padding: 0 0 0 13px;
+}
+
+.ao-chat-body .active-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ao-chat-body .active-chat h4 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    
+    color: #333333;
+}
+
+
+.ao-chat-body .panel-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ao-chat-body .notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ao-chat-body .panel-title .time {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    padding-bottom: 2px;
+    
+    color: #EB5757;
+}
+
+.ao-chat-body .panel-title .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #EB5757;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+.ao-chat-body .panel {
+    margin-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.ao-chat-body .panel-body {
+    background: #f4f4f4;
+}
