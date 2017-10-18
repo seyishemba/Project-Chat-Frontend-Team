@@ -6,6 +6,7 @@
 
 body {
     background-color: #F2F2F2;
+    font-family: Lato, sans-serif;
 }
 
 
@@ -246,26 +247,8 @@ body {
     margin: 0 10px;
 }
 
-body {
-    margin: 0 !important;
-    padding: 0 !important;
-    background: #e5e5e5;
-    font-family: Lato, sans-serif;
-}
 
-.navbar-brand {
-    background: var(--primary-dark);
-    height: 100%;
-    padding: 10px 25px;
-}
 
-.navbar {
-    margin: 0 !important;
-    padding: 0 !important;
-    background-color: #00aeff;
-    border: none;
-    border-radius: 0;
-}
 
 .business-account {
     font-size: 18px;
@@ -281,6 +264,9 @@ body {
     margin: 0 5px;
 }
 
+
+
+/*
 .account-officer {
     position: relative !important;
     padding: 0 10px !important;
@@ -316,7 +302,8 @@ body {
 
 .account-officer .contact-holder p:first-child {
     font-weight: bold;
-}
+} */
+
 
 hr {
     margin-top: 15px;
@@ -403,40 +390,29 @@ hr {
     height: auto;
     padding-bottom: 30px;
     position: relative;
-    width: 100%;
     border-bottom: 1px solid #788996;
     border-top: 1px solid #DDDDDD;
 }
 
-.footer p {
-    margin: 0;
-}
-
-.footer img {
-    max-width: 100%;
-}
 
 .footer h3 {
-    border-bottom: 1px solid #788996;
-    padding: 0 0 10px 0;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
     font-size: 16px;
+    padding:  0 0 0 15px;
     color: #4F4F4F;
 }
 
 .footer ul {
     list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-    margin-top: 7px;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
     line-height: 22px;
     font-size: 14px;
+    padding: 0 15px;
     color: #828282;
 }
 
@@ -449,14 +425,7 @@ hr {
     color: #78828D
 }
 
-.bg-gray {
-    background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
-    box-shadow: 0 1px 0 #B4B3B3;
-}
 
-.social li a {
-    color: #EDEFF1;
-}
 
 .footer-bottom {
     background: #FFF;
@@ -474,16 +443,16 @@ hr {
     color: #4F4F4F;
 }
 
-.social li {
-    font-size: 2em;
-    margin: 0 8px 0 0;
-    height: 36px;
-    line-height: 36px;
-    width: 28px;
+.social i {
     color: #4F4F4F;
-    text-align: center;
     cursor: pointer;
+    font-size: 22px;
+    margin: 0 8px !important;
 }
+
+.social i:hover{
+    color: #4099FF
+  }
 
 .certified {
     display: flex;
@@ -504,4 +473,168 @@ hr {
 
 .certified li {
     margin-right: 19px;
+    width: 32px;
+}
+
+/* newsletter */
+
+.optinBg {
+    width: 100%;
+    background: #01579b;
+    padding: 10px 10px;
+    margin-top: 60px;
+    color: white
+}
+
+.tag {
+    font-size: 40px !important;
+    margin-top: 10px
+}
+
+.optinHead {
+    margin-top: 0px;
+    line-height: 1.5;
+    margin-bottom: 0px
+}
+
+.optinSubHead {
+    color: #2196f3;
+    margin-top: 0px
+}
+
+.overlay:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* CHAT SideBar */
+
+.chat-sb {
+    padding: 0 !important;
+}
+
+/* Account officer chat */
+
+.ao-chat {
+    width: 300px;
+    height: 1000px; /* test */
+    overflow-y: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ao-chat nav {
+    padding: 10px 0 0 5px;
+    width: 50px;
+    background-color: var(--primary-color);
+    height: 1000px;
+}
+
+.ao-chat .active {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:#F2F2F2;
+}
+
+.ao-chat .row {
+    margin: 0 0 0 -15px !important;
+}
+
+.ao-chat ul {
+    margin-top: 50px;
+}
+
+.ao-chat li {
+    margin-bottom: 10px;
+}
+
+.ao-chat li > a {
+    padding: 5px 0 5px 7px;
+}
+
+.ao-chat a:hover {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:#F2F2F2;
+}
+
+.ao-chat a:focus {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:#F2F2F2;
+}
+
+.active-chat {
+    /* width: 233px; */
+    height: 39px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ao-chat .ao-chat-body {
+    padding: 0 0 0 13px;
+}
+
+.ao-chat-body .active-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ao-chat-body .active-chat h4 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    
+    color: #333333;
+}
+
+
+.ao-chat-body .panel-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ao-chat-body .notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ao-chat-body .panel-title .time {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    padding-bottom: 2px;
+    
+    color: #EB5757;
+}
+
+.ao-chat-body .panel-title .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #EB5757;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+.ao-chat-body .panel {
+    margin-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.ao-chat-body .panel-body {
+    background: #f4f4f4;
 }
