@@ -392,7 +392,6 @@ hr {
 
 
 .footer h3 {
-    /* padding: 0 0 10px 0; */
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -422,12 +421,7 @@ hr {
     color: #78828D
 }
 
-.social {
-    text-align: center;
-}
-.social li a {
-    color: #EDEFF1;
-}
+
 
 .footer-bottom {
     background: #FFF;
@@ -445,16 +439,16 @@ hr {
     color: #4F4F4F;
 }
 
-.social li {
-    font-size: 2em;
-    margin: 0 8px 0 0;
-    height: 36px;
-    line-height: 36px;
-    width: 28px;
+.social i {
     color: #4F4F4F;
-    text-align: center;
     cursor: pointer;
+    font-size: 22px;
+    margin: 0 8px !important;
 }
+
+.social i:hover{
+    color: #4099FF
+  }
 
 .certified {
     display: flex;
@@ -476,4 +470,34 @@ hr {
 .certified li {
     margin-right: 19px;
     width: 32px;
+}
+
+/* newsletter */
+
+.optinBg {
+    width: 100%;
+    background: #01579b;
+    padding: 10px 10px;
+    margin-top: 60px;
+    color: white
+}
+
+.tag {
+    font-size: 40px !important;
+    margin-top: 10px
+}
+
+.optinHead {
+    margin-top: 0px;
+    line-height: 1.5;
+    margin-bottom: 0px
+}
+
+.optinSubHead {
+    color: #2196f3;
+    margin-top: 0px
+}
+
+.overlay:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
