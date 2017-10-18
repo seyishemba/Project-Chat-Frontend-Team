@@ -263,7 +263,10 @@ body {
     height: 31px;
     margin: 0 5px;
 }
-/* 
+
+
+
+/*
 .account-officer {
     position: relative !important;
     padding: 0 10px !important;
@@ -300,6 +303,7 @@ body {
 .account-officer .contact-holder p:first-child {
     font-weight: bold;
 } */
+
 
 hr {
     margin-top: 15px;
