@@ -52,32 +52,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .acc-officer {
-        white-space: normal;
-        position: relative;
-        top: 25px;
-        right: 20px;
-        padding: 0;
-    }
-
-    .profile-group{       
-        margin-top: 50px;
-        display: block;
-        right: 0px;
-        padding: 0;
-        margin-left: 200px;
-    }
-    
-
-    .vr-line{
-        display: none;
-    }
-
-    
-}
-
-
 .profile-pic {
     position: relative;
     width: 25px;

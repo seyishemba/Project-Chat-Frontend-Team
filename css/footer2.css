@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    background-color: #084482;
+    padding: 10px 5px 10px 5px;
+}
+
+
+.p-text{
+    padding: 0 !important;
+    margin: 0  !important;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.p-text2{
+    margin-left: 12px;
+    font-size: 12px;
+    color: #00AEFF;
+}
+
+
+.input{
+    box-sizing: border-box;
+	margin: auto;
+    padding: 15px;
+    width: 30%;
+	border-radius: none;
+	border: none;
+}
+
+.font-icon{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    widows: 20px;
+}
