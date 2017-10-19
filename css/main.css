@@ -312,14 +312,11 @@ hr {
     height: 100%;
 }
 
-#unsent {
-    min-height: 550px;
-}
-
 .filter-area {
     padding: 15px 15px;
     display: inline-block;
     width: 100%;
+    min-height: 550px;;
 }
 
 .filter-area .unsent-notify {
@@ -378,10 +375,9 @@ hr {
     display: inline-block !important;
 }
 
-.records-query > .form-group:nth-child(2){
+.records-query > .form-group:nth-child(2) {
     margin-right: 5px;
 }
-
 
 /* Footer */
 
