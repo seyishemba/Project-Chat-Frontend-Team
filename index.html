@@ -185,6 +185,7 @@
         <!-- sidebar -->
         <div class="col-md-3 col-lg-3 visible-lg visible-md chat-sb">
             <div class="ao-chat">
+               
                 <div class="row">
 
                     <div class="col-md-2 ao-chat-nav">
@@ -192,12 +193,12 @@
 
                         <nav class="">
                             <ul class="nav nav-tabs">
-                                <li>
+                                <li class="active">
                                     <a data-toggle="tab" href="#nba">
                                         <img src="images/nba.png" alt="" width="34px">
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a data-toggle="tab" href="#uba">
                                         <img src="images/uba.png" alt="" width="34px">
                                     </a>
@@ -831,6 +832,39 @@
 
 <!-- Chat Demo js -->
 <script>
+
+                 //  -------------------       SMART SIDEBAR HEIGHT --------
+
+
+    //so we need to make the sidebar height smart in the sense that we make use of the user's height so whatever type of system screen the user uses, the sidebar takes the whole of the height. Lets get started shall we? ;)
+
+    var screenHeight = $(window).height();
+
+    //set the chat wrapper size
+    $('.ao-chat').css({'height':screenHeight, 'z-index': '0'});
+    //set the chat size
+    $('.ao-chat nav').css('height', screenHeight);
+
+
+    //              MAKE SIDEBAR FLOAT 
+
+    $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+        // once user scrolls beyond the secondary nav, make the sidebar float
+
+        if (scroll > 122) {
+            $('.ao-chat').css({'position':'fixed','top':'0'});
+            //hide it below other layers of display downwards
+        }else{
+            $('.ao-chat').css({'position':'relative','top':'0'});
+        }
+    });
+
+//                      -----               END OF MAGIC            ------          :)          
+
+
+
+
     //Script to simulate back and forth messaging between user and account officer;
     const msgForm = document.querySelectorAll('.message-form');
     const typingHtml = `
