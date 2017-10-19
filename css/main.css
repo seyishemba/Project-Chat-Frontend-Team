@@ -9,9 +9,7 @@ body {
     font-family: Lato, sans-serif;
 }
 
-
 /*=========================================== HEADER =============================*/
-
 
 /* Primary NAV */
 
@@ -146,7 +144,6 @@ body {
     background-color: #084482;
 }
 
-
 /* Secondary Nav */
 
 .secondary-nav {
@@ -171,7 +168,7 @@ body {
     border-bottom: 3px solid #00AEFF;
 }
 
-.secondary-nav .list-inline>li:hover {
+.secondary-nav .list-inline > li:hover {
     border-bottom: 3px solid #00AEFF;
 }
 
@@ -184,7 +181,6 @@ body {
     text-decoration: none;
     color: inherit;
 }
-
 
 /* Content Area */
 
@@ -261,7 +257,6 @@ body {
     margin: 0 5px;
 }
 
-
 /*
 .account-officer {
     position: relative !important;
@@ -322,6 +317,7 @@ hr {
 .filter-area {
     padding: 15px 15px;
     display: inline-block;
+    width: 100%;
 }
 
 .filter-area .unsent-notify {
@@ -336,11 +332,11 @@ hr {
 .filter-area input {
     border-radius: 1px;
     margin-right: 0;
-    width: 120px !important;
+    width: 103px !important;
 }
 
 .filter-area .caret-area {
-    padding: 6px 15px !important;
+    padding: 6px 12px !important;
     border: 1px solid var(--primary-color) !important;
 }
 
@@ -365,12 +361,20 @@ hr {
     margin-right: 0 !important;
 }
 
-.admin-tabs li.active>a {
+.admin-tabs li.active > a {
     color: var(--primary-color) !important;
     border-left: none !important;
     border-bottom: none !important;
 }
 
+.records-query {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.records-query > .form-group {
+    display: inline-block !important;
+}
 
 /* Footer */
 
@@ -468,7 +472,6 @@ hr {
     width: 32px;
 }
 
-
 /* newsletter */
 
 .optinBg {
@@ -499,13 +502,11 @@ hr {
     background: rgba(0, 0, 0, 0.8);
 }
 
-
 /* CHAT SideBar */
 
 .chat-sb {
     padding: 0 !important;
 }
-
 
 /* Account officer chat */
 
@@ -524,7 +525,7 @@ hr {
     height: 1000px;
 }
 
-.ao-chat .nav-tabs li>a {
+.ao-chat .nav-tabs li > a {
     padding: 5px 4px 5px 7px;
     border-radius: 0;
     border: 0;
@@ -535,13 +536,13 @@ hr {
     border-bottom: 0;
 }
 
-.ao-chat  .nav-tabs li.active>a {
+.ao-chat .nav-tabs li.active > a {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     background-color: #F2F2F2;
 }
 
-.ao-chat .nav-tabs li.active>a:focus {
+.ao-chat .nav-tabs li.active > a:focus {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     background-color: #F2F2F2;
@@ -559,13 +560,11 @@ hr {
     margin-bottom: 10px;
 }
 
-
 .ao-chat .nav-tabs a:hover {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     background-color: #F2F2F2;
 }
-
 
 .active-chat {
     /* width: 233px; */
@@ -643,7 +642,6 @@ hr {
     background: #f4f4f4;
 }
 
-
 /* Chat Interface */
 
 .mr-auto {
@@ -697,7 +695,7 @@ hr {
 }
 
 .messages-area {
-    max-height: 220px;
+    max-height: 260px;
     overflow: auto;
     padding: 10px;
 }
@@ -759,20 +757,42 @@ hr {
     outline-offset: 0;
 }
 
-.message-submit {
+.submit-button {
     margin-left: 10px;
     color: #828282;
     cursor: pointer;
+    outline: none !important;
 }
 
-.message-submit:hover {
-    margin-left: 10px;
+.submit-button:hover {
     color: #00AEFF;
-    cursor: pointer;
 }
 
 .show-typing {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 15px;
+}
+
+/*Responsiveness for content area*/
+@media screen and (max-width: 750px) {
+    .nav-tabs a {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn.primary {
+        margin: 0 2px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .dropdown-toggle.primary {
+        padding: 6px 8px !important;
+    }
+    .secondary-nav .list-inline li{
+        padding: 10px 10px 0 !important;
+    }
 }
