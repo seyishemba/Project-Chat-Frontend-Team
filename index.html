@@ -190,33 +190,25 @@
 
 
                             <nav class="">
-                                <ul class="nav">
+                                <ul class="nav nav-tabs">
                                     <li>
-                                        <a href="#">
+                                        <a data-toggle="tab" href="#nba">
                                             <img src="images/nba.png" alt="" width="34px">
                                         </a>
                                     </li>
                                     <li class="active">
-                                        <a href="#">
+                                        <a data-toggle="tab" href="#uba">
                                             <img src="images/uba.png" alt="" width="34px">
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="images/nba.png" alt="" width="34px">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="images/nba.png" alt="" width="34px">
-                                        </a>
-                                    </li>
+                                    
                                 </ul>
                             </nav>
                         </div>
 
-
-                        <div class="col-md-10 ao-chat-body">
+                        <!-- UBA Tab -->
+                        <div class="col-md-10 tab-content">
+                            <div class="ao-chat-body tab-pane fade in active" id="uba">
                             <div class="active-chat">
                                 <div class="company-name">
                                     <h4>United Bank For Africa</h4>
@@ -323,14 +315,124 @@
                                 </div>
                             </div>
 
+                        </div>
 
+                        <!-- NBA Tab -->
+                        <div class="ao-chat-body tab-pane fade in" id="nba">
+                                <div class="active-chat">
+                                    <div class="company-name">
+                                        <h4>NBA</h4>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="panel-group" id="accordion1">
+                                    <div class="panel">
+                                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+                                            <div class="panel-title">
+                                                <div class="name">Stephen Curry</div>
+                                                <div class="notification">
+                                                    <div class="time">12:30PM</div>
+                                                    <div class="banner">3</div>
+                                                </div>
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse out">
+    
+                                            <div class="chat-space">
+    
+                                                <div class="chat-box">
+                                                    <!--Area where all the messages will be. Has a max-height. Can be altered-->
+                                                    <div class="messages-area">
+                                                        <!--sent message from the user-->
+                                                        <div class="sent-message text-left">
+                                                            <p class="message sent">
+                                                                Hello!
+                                                            </p>
+                                                        </div>
+                                                        <!--Message received-->
+                                                        <div class="received-message text-left">
+                                                            <p class="message received">
+                                                                Hi! Ready to plan your trip.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!--Form to add new messages-->
+                                                    <form action="" class="message-form">
+                                                        <div class="message-input-area">
+                                                            <label for="user-message"></label>
+                                                            <!--Input area for message-->
+                                                            <input type="text" class="message-input" name="user-message" id="user-message" placeholder="Write a message">
+                                                            <!--Submit button-->
+                                                            <button class="btn" type="submit">
+                                                                <i class="fa fa-send message-submit"></i>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="panel-group" id="accordion2">
+                                    <div class="panel">
+                                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
+                                            <div class="panel-title">
+                                                <div class="name">Lebron James</div>
+                                                <div class="notification">
+                                                    <div class="time">1:57PM</div>
+                                                    <!-- <div class="banner">3</div> -->
+                                                </div>
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse out">
+                                            <div class="chat-space">
+    
+                                                <div class="chat-box">
+                                                    <!--Area where all the messages will be. Has a max-height. Can be altered-->
+                                                    <div class="messages-area">
+                                                        <!--sent message from the user-->
+                                                        <div class="sent-message text-left">
+                                                            <p class="message sent">
+                                                                Hello!
+                                                            </p>
+                                                        </div>
+                                                        <!--Message received-->
+                                                        <div class="received-message text-left">
+                                                            <p class="message received">
+                                                                Hi! Ready to plan your trip.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!--Form to add new messages-->
+                                                    <form action="" class="message-form">
+                                                        <div class="message-input-area">
+                                                            <label for="user-message"></label>
+                                                            <!--Input area for message-->
+                                                            <input type="text" class="message-input" name="user-message" id="user-message" placeholder="Write a message" disabled>
+                                                            <!--Submit button-->
+                                                            <button class="btn" type="submit">
+                                                                <i class="fa fa-send message-submit"></i>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
                         </div>
 
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-9 col-sm-12 col-xs-12" id="start">
+            <div class="col-md-9 col-sm-12 col-xs-12 admin-tabs" id="start">
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active">
                         <a href="#unsent" aria-controls="unsent" role="tab" data-toggle="tab">Unsent</a>
