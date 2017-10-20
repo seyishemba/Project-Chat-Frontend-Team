@@ -9,6 +9,11 @@ body {
     font-family: Lato, sans-serif;
 }
 
+:root {
+    --primary-color: #00aeff;
+    --primary-dark: #084482;
+}
+
 /*=========================================== HEADER =============================*/
 
 /* Primary NAV */
@@ -186,11 +191,6 @@ body {
 
 /* Content Area */
 
-:root {
-    --primary-color: #00aeff;
-    --primary-dark: #084482;
-}
-
 .white-text {
     color: white !important;
 }
@@ -258,44 +258,6 @@ body {
     height: 31px;
     margin: 0 5px;
 }
-
-/*
-.account-officer {
-    position: relative !important;
-    padding: 0 10px !important;
-}
-
-.account-officer img {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    left: 0;
-    top: 2px;
-}
-
-.account-officer .description {
-    font-size: 10px;
-    line-height: 10px;
-    margin: 5px 0;
-    text-align: center;
-}
-
-.account-officer .contact-holder {
-    background: var(--primary-dark);
-    padding: 6px 20px;
-    border-radius: 8px;
-}
-
-.account-officer .contact-holder p {
-    font-size: 10px;
-    margin: 0;
-    line-height: 10px;
-    text-align: center;
-}
-
-.account-officer .contact-holder p:first-child {
-    font-weight: bold;
-} */
 
 hr {
     margin-top: 15px;
@@ -703,6 +665,15 @@ hr {
     max-height: 260px;
     overflow: auto;
     padding: 10px;
+}
+
+.messages-area::-webkit-scrollbar{
+    width: 5px;
+}
+
+.messages-area::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .1);
 }
 
 .sent-message {
