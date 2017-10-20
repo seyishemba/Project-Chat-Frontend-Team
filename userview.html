@@ -177,7 +177,7 @@
                                           <p>Hello John Doe! I'm online. Send me a message if you need assistance.</p>
                                         </div>
                                     
-                                        <a  class="start-chat" id="switch">Chat with <span class="ao-name"> Fisayo </span> </a>
+                                        <a class="start-chat" id="switch" data-toggle="collapse" href="#collapse1">Chat with <span class="ao-name"> Fisayo </span> </a>
                                         
                                     </div>
 
@@ -688,28 +688,19 @@
             // to switch when chat header on chat start
 
             $(document).ready(function(){
-                $('#switch').attr('data-toggle','collapse');
-                $('#switch').attr('href','#collapse1');
-
-                $('.dismiss-btn').attr('data-toggle','collapse');
-                $('.dismiss-btn').attr('href','#collapse1');
-
             
             $("#switch").click(function() {
-                // $($(this).attr('data-toggle','collapse'));
-                // $($(this).attr('href','#collapse1'));
+
                 $(".ao-chat-available").hide();
                 $(".ao-chat-start").show();
             });
 
             $(".dismiss-btn").click(function() {
-                // $('#switch').attr('data-toggle','collapse');
-                // $('#switch').attr('href','#collapse1');
+
+                $('#switch').click();
 
                 $(".ao-chat-available").show();
                 $(".ao-chat-start").hide();
-                // $($(this).attr('data-toggle','collapse'));
-                // $($(this).attr('href','#collapse1'));
 
             });
         });
