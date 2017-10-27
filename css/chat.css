@@ -278,3 +278,26 @@
     font-size: 15px;
 }
 
+/*Responsiveness for content area*/
+@media screen and (max-width: 750px) {
+    .nav-tabs a {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn.primary {
+        margin: 0 2px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .dropdown-toggle.primary {
+        padding: 6px 8px !important;
+    }
+
+    .secondary-nav .list-inline li {
+        padding: 10px 10px 0 !important;
+    }
+}
