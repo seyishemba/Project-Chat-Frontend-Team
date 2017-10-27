@@ -690,7 +690,7 @@ hr {
 }
 
 .message-input-area {
-    position: absolute;
+    position: absolute !important;
     bottom: 0;
     width: 100%;
     display: flex;
